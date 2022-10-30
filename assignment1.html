@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트폰 기술 소개 페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px; padding: 0px;
+    }
+
+    body {
+        margin: 0px auto;
+        width: 1000px;
+        background: linear-gradient(180deg, #7D9D9C 50%, #576F72 50%);
+    }
+
+    /*헤더*/
+    header {
+        margin: 100px 0px 10px 0px;
+    }
+
+    header h1 {
+        font-family:'Jua', sans-serif;
+        font-size: 50px;
+    }
+
+    header p {
+        font-family: 'Noto Serif KR', serif;
+    }
+
+    header hr {
+        border-top: 10px dotted #E4DCCF;
+        border-bottom: none; border-left:none; border-right: none;
+    }
+
+    /*메뉴바*/   
+    nav h3 {
+        display: none;
+    }
+
+    #menubar {
+        background-color: #576F72;
+        padding: 0px;
+        font-size: 0px;
+        border-radius: 30px;
+        margin: 50px 0px 10px 0px;
+    }
+
+    #menubar li {
+        border-radius: 30px;
+        font-size: 20px;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        margin: 4px 0px;
+    }
+
+    #menubar li:hover {
+        background-color: #7D9D9C;
+    }
+
+    #menubar li a {
+        text-decoration: none;
+        font-family:'Jua', sans-serif;
+        color: #F0EBE3;
+    }
+
+    /*내부 페이지*/
+    #page {
+        padding: 30px 10px 10px 10px;
+        background-color: #F0EBE3;
+        font-family: 'Noto Serif KR', serif;
+        border-radius: 20px;
+    }
+
+    article {
+        margin: 10px 0px 20px 0px;
+
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .title a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        background-color: #E4DCCF;
+        padding: 2px 10px;
+        border-radius: 20px;
+    }
+
+    article p {
+        padding: 0px 20px;
+        text-indent: 15px;
+    }
+
+    #sample > p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #sample table{
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #sample img {
+        border-radius: 20px;
+        height: 300px;
+        box-shadow: 5px 5px 10px #5f8de9;
+    }
+    
+    @keyframes imgani {
+        0% {transform: scale(100%, 100%); box-shadow: 5px 5px 10px #5f8de9;}
+        100% {transform: scale(120%, 120%); box-shadow: 5px 5px 10px #e95f5f;}
+    }
+
+    #sample img:hover {
+        animation: imgani 2s;
+    }
+
+    /*푸터*/
+    footer {
+        margin: 0px;
+        height: 100px;
+        padding-top: 90px;
+        background-color: #576F72;
+        font-family: 'Noto Serif KR', serif;
+        text-align: right;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #576F72;
+        background-color: #E4DCCF;
+        padding: 4px 10px;
+        border-radius: 20px;
+    }
+
+
+</style>
+<body>
+    <div>
+        <header>
+            <!--제목과 제목 소개-->
+            <h1>스마트폰</h1>
+            <p>
+                스마트폰은 컴퓨터를 결합한 무선 휴대전화기이다. PC에서 실행되는 운영체제보다 작게 만든 모바일
+                운영체제를 탑재하여 인터넷 검색, 전자우편, 간단한 문서 편집, 카메라, 오디오 및 비디오 재생 등 PC
+                의 기능을 거의 모두 갖추고 있다.
+            </p>
+            <br>
+            <hr>
+        </header>      
+        <nav>
+            <!--목차-->
+            <h3>목차</h3>
+            <ul id="menubar">
+                <li><a href="#history">역사</a></li>
+                <li><a href="#android">안드로이드</a></li>
+                <li><a href="#iphone">아이폰</a></li>
+                <li><a href="#sample">샘플</a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <section>
+            <article id="history">
+                <!--역사-->
+                <h3 class="title"><a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0" target="_blank">역사</a></h3>
+                <p>
+                    최초의 스마트폰은 사이먼(Symon)으로 추정된다. IBM사가 1992년에 설계하여 그 해에 미국 네바다 주
+                    의 라스베이거스에서 열린 컴댁스에서 컨셉 제품으로 전시되었다
+                </p>
+            </article>
+            <article id="android">
+                <!--안드로이드-->
+                <h3 class="title"><a href="https://ko.wikipedia.org/wiki/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C_(%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C)" target="_blank">안드로이드</a></h3>
+                <p>
+                    안드로이드(영어: Android)는 휴대 전화를 비롯한 휴대용 장치를 위한 운영 체제와 미들웨어, 사용자 인
+                    터페이스 그리고 표준 응용 프로그램(웹 브라우저, 이메일 클라이언트, 단문 메시지 서비스(SMS),멀티
+                    미디어 메시지 서비스(MMS)등)을 포함하고 있는 소프트웨어 스택이자 모바일 운영 체제이다.
+                </p>
+            </article>
+            <article id="iphone">
+                <!--아이폰-->
+                <h3 class="title"><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%ED%8F%B0" target="_blank">아이폰</a></h3>
+                <p>
+                    아이폰(영어: iphone)은 2007년 1월 9일, 애플이 발표한 휴대 전화 시리즈이다. 미국 샌프란시스코에서
+                    열린 맥월드 2007에서 애플의 창업자 중 한명인 스티브 잡스가 발표했다
+                </p>
+            </article>
+            <article id="sample">
+                <!--샘플-->
+                <h3 class="title"><a href="http://www.naver.com" target="_blank">샘플</a></h3>
+                <p><strong>스마트폰샘플</strong></p>
+                <table>
+                    <tr>
+                        <td><img src="img/galaxys7.png" alt="galaxys7" width="150px" id="galaxy"></td>
+                        <td><img src="img/iphone6.PNG" alt="iphone6" width="150px" id="iphone"></td>
+                        <td><img src="img/nokia.PNG" alt="nokia" width="150px" id="nokia"></td>
+                        <td><img src="img/windowphone.PNG" alt="windowphone" width="150px" id="windowphone"></td>
+                    </tr>
+                </table>
+            </article>
+            </section>
+            <br>
+        </div>
+        <footer>
+            <a href="survey.html" target="_blank" method="get">설문조사 링크 ></a><br><br>
+            <p>Copyright 202001493 송아현 hello</p>
+        </footer>
+    </div>
+</body>
+</html>
