@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문지</title>
+</head>
+<body>
+    <div>
+        <header>
+            <!--제목 및 안내-->
+            <h1>설문지</h1>
+            <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+        </header>
+        <hr>
+        <section>
+            <form>
+                <table>
+                <tr>
+                    <td>학년</td>
+                    <td>
+                        <input id="grade1" type="radio" name="grade" value="1" checked>
+                        <label for="grade1">1학년</label>
+                        <input id="grade2" type="radio" name="grade" value="2">
+                        <label for="grade2">2학년</label>
+                        <input id="grade3" type="radio" name="grade" value="3">
+                        <label for="grade3">3학년</label>
+                        <input id="grade4" type="radio" name="grade" value="4">
+                        <label for="grade4">4학년</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <input id="male" type="radio" name="gender" value="m">
+                        <label for="male">남</label>
+                        <input id="female" type="radio" name="gender" value="f">
+                        <label for="female">여</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>관심 분야</td>
+                    <td>
+                        <select>
+                            <option>모바일 소프트웨어</option>
+                            <option>웹 서비스</option>
+                            <option>빅데이터</option>
+                            <option>디지털 콘텐츠 및 가상 현실</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>진로</td>
+                    <td>
+                        <input id="developer" type="checkbox" checked>
+                        <label for="developer">개발</label>
+                        <input id="planner" type="checkbox">
+                        <label for="planner">기획</label>
+                        <input id="sales" type="checkbox">
+                        <label for="sales">영업</label>
+                        <input id="found" type="checkbox">
+                        <label for="found">창업</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>남기고 싶은 말</td>
+                    <td><textarea name="message" id="message" cols="50" rows="10" placeholder="글을 남겨주세요"></textarea></td>
+                </tr>
+                </table>
+        </form>
+        </section>
+        <footer>
+            <p>Copyright 2022 by Song Ahyeon</p>
+        </footer>
+    </div>
+</body>
+</html>
